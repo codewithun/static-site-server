@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f8fafc;
+    color: #172033;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 8%;
+    border-bottom: 1px solid #e5eaf1;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #172033;
+    text-decoration: none;
+}
+
+.logo span,
+.hero h1 span {
+    color: #2563eb;
+}
+
+.status {
+    color: #15803d;
+    font-size: 13px;
+}
+
+.hero {
+    max-width: 850px;
+    margin: 110px auto 80px;
+    padding: 0 24px;
+}
+
+.eyebrow {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 7vw, 68px);
+    line-height: 1.12;
+    letter-spacing: -2px;
+    margin: 24px 0;
+}
+
+.description {
+    max-width: 600px;
+    color: #64748b;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 14px 22px;
+    background: #2563eb;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.info {
+    display: flex;
+    gap: 55px;
+    margin-top: 75px;
+    padding-top: 30px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.info div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info strong {
+    font-size: 24px;
+    color: #2563eb;
+}
+
+.info span {
+    color: #64748b;
+    font-size: 13px;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 12px;
+    border-top: 1px solid #e5eaf1;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        margin-top: 70px;
+    }
+
+    .info {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+}
